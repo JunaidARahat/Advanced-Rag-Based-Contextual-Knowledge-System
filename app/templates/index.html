@@ -8,8 +8,9 @@
 </head>
 <body>
     <div class="container">
-        <h1>Knowledge Management System</h1>
+        <h1>Advanced RAG-Based Contextual Knowledge System</h1>
         
+        <!-- Upload Section -->
         <div class="upload-section">
             <h2>Upload Documents</h2>
             <form id="upload-form">
@@ -18,18 +19,21 @@
             </form>
         </div>
 
+        <!-- Query Section -->
         <div class="query-section">
             <h2>Ask Questions</h2>
-            <textarea id="question-input" placeholder="Enter your question..."></textarea>
+            <textarea id="question-input" placeholder="Enter your question here..."></textarea>
             <button id="submit-question">Ask</button>
         </div>
 
+        <!-- Response Section -->
         <div class="response-section">
             <h2>Response</h2>
-            <div id="response-content"></div>
+            <div id="response-content">Your response will appear here...</div>
         </div>
     </div>
 
+    <!-- JavaScript -->
     <script>
         document.getElementById('upload-form').addEventListener('submit', async (e) => {
             e.preventDefault();
